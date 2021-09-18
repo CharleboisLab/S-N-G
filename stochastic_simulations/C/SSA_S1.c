@@ -1,5 +1,5 @@
 // Joshua Guthrie, Charlebois Laboratory, University of Alberta, jdguthri@ualberta.ca
-// Stochastic simulation code (using Gillespie SSA) for the manuscript "Phenotypic Heterogeneity Facilitates Survival WhileHindering the Evolution of Drug Resistance" submitted to Biophysical Journal
+// Stochastic simulation code (using Gillespie SSA) for the manuscript "Phenotypic Heterogeneity Facilitates Survival While Hindering the Evolution of Drug Resistance"
 
 /* REACTIONS
    ********************************************************************
