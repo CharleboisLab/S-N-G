@@ -1,5 +1,5 @@
 % Joshua Guthrie, Charlebois Laboratory, University of Alberta, Department of Physics, jdguthri@ualberta.ca
-% Deterministic ODE simulation code for the manuscript "Phenotypic Heterogeneity Facilitates Survival WhileHindering the Evolution of Drug Resistance" submitted to Biophysical Journal
+% Deterministic ODE simulation code for the manuscript "Phenotypic Heterogeneity Facilitates Survival WhileHindering the Evolution of Drug Resistance"
 
 
 clear;
