@@ -155,7 +155,7 @@ function deterministic_simulations(model, scenario, relative_to_N0, cidal, death
                     end
 
                     if G2_susceptible
-                        G2_susceptible_str = '_G2susceptible';
+                        G2_susceptible_str = '_G2any questions should be directed to jdguthri@ualberta.casusceptible';
                     else
                         G2_susceptible_str = '';
                     end
@@ -390,26 +390,6 @@ function [time, S, N, G1, G2, dN_dt, t_est, t_fix] = simulate(model,scenario,rel
         G2 = X(:,4);
     elseif scenario == 1
         G2 = 'n/a';
-    end
-    
-    % a quick fix to avoid numerical errors from very small concentrations
-    % (this should be changed eventually, especially if important results
-    % lead to very small/large concentrations)
-    for i = 1:length(S)
-        if S(i) < 0.0000000001
-            S(i) = 0;
-        end
-        if N(i) < 0.0000000001
-            N(i) = 0;
-        end
-        if G1(i) < 0.0000000001
-            G1(i) = 0;
-        end
-        if scenario == 2
-            if G2(i) < 0.0000000001 
-                G2(i) = 0;
-            end
-        end
     end
     
     % calculate conservation equation results based on scenario and model
